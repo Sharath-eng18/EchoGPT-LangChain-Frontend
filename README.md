@@ -1,4 +1,4 @@
-#EchoGPT Frontend
+#  EchoGPT Frontend
 This is the frontend repository for EchoGPT, a full-stack conversational AI application. This project provides a clean, responsive, and user-friendly interface for interacting with a large language model. The application is built to be fast and dynamic, featuring real-time chat functionality and seamless streaming of AI responses.
 
 ✨ Features
