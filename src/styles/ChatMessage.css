@@ -1,0 +1,83 @@
+:root {
+  --chatgpt-mid-gray: #343541;
+  --chatgpt-light-gray: #444654;
+  --chatgpt-text-color: #d1d5db;
+  --chatgpt-user-message-bg: #2a2b32; /* Slightly different gray for user */
+}
+
+/* Base style for all messages */
+.message {
+  display: flex;
+  width: 100%;
+}
+
+.message.ai {
+  background-color: var(--chatgpt-light-gray);
+}
+
+.message.user {
+  background-color: var(--chatgpt-mid-gray); /* Match the main background */
+}
+
+.message-content {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.message-role {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.message-time {
+  font-size: 0.75rem;
+  color: #8e8ea0; /* Muted color for the timestamp */
+}
+
+.message-text {
+  color: var(--chatgpt-text-color);
+  line-height: 1.75;
+  white-space: pre-wrap; /* Respects newlines and spaces */
+  word-wrap: break-word;
+}
+
+/* Specific style for error messages */
+.message.error .message-text {
+  color: #ff8a8a; /* Reddish tint for error text */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .message-content {
+    padding: 1rem 0.75rem;
+  }
+
+  .message-header {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .message-role {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .message-time {
+    font-size: 0.6875rem;
+  }
+
+  .message-text {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+}

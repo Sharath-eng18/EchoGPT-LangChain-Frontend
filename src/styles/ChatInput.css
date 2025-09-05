@@ -1,0 +1,106 @@
+:root {
+  --chatgpt-mid-gray: #343541;
+  --chatgpt-light-gray: #444654;
+  --chatgpt-text-color: #d1d5db;
+  --chatgpt-border-color: rgba(255, 255, 255, 0.2);
+}
+
+.chat-input-container {
+  padding: 1.5rem;
+  background-color: var(--chatgpt-mid-gray);
+  border-top: 1px solid var(--chatgpt-border-color);
+}
+
+.chat-input-form {
+  width: 65vw;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end; /* Align items to the bottom */
+  background-color: var(--chatgpt-light-gray);
+  border: 1px solid var(--chatgpt-border-color);
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.message-input {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--chatgpt-text-color);
+  font-size: 1rem;
+  font-family: inherit;
+  resize: none; /* Important for auto-resizing */
+  line-height: 1.5;
+  max-height: 200px; /* Prevent it from getting too tall */
+  overflow-y: auto; /* Add scrollbar if it exceeds max-height */
+}
+
+/* Custom scrollbar for the textarea */
+.message-input::-webkit-scrollbar {
+  width: 6px;
+}
+.message-input::-webkit-scrollbar-track {
+  background: none;
+}
+.message-input::-webkit-scrollbar-thumb {
+  background-color: var(--chatgpt-dark-gray);
+  border-radius: 10px;
+}
+
+.send-button {
+  background-color: var(--chatgpt-text-color);
+  color: var(--chatgpt-dark-gray);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: 0.75rem;
+}
+
+.send-button:hover {
+  background-color: #ffffff;
+}
+
+.send-button:disabled {
+  background-color: #565869;
+  color: #8e8ea0;
+  cursor: not-allowed;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .chat-input-container {
+    padding: 1rem;
+  }
+
+  .chat-input-form {
+    width: 100%;
+  }
+
+  .input-wrapper {
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+
+  .message-input {
+    font-size: 0.875rem;
+    max-height: 120px;
+  }
+
+  .send-button {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+}

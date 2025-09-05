@@ -1,0 +1,11 @@
+.app {
+  height: 100vh;
+  display: flex;
+}
+
+/* Ensure full height on mobile */
+@media (max-width: 768px) {
+  .app {
+    padding: 0;
+  }
+}
