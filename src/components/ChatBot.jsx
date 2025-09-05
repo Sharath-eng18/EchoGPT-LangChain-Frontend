@@ -113,7 +113,7 @@ const ChatBot = () => {
   <div className='chatbot-wrapper'>
     <div className="chatbot-container">
       <div className="chatbot-header">
-        <h1>AI ChatBot</h1>
+        <h1>EchoGPT</h1>
         <button onClick={clearChat} className="clear-button">
           Clear Chat
         </button>
