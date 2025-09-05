@@ -1,12 +1,22 @@
-# React + Vite
+#EchoGPT Frontend
+This is the frontend repository for EchoGPT, a full-stack conversational AI application. This project provides a clean, responsive, and user-friendly interface for interacting with a large language model. The application is built to be fast and dynamic, featuring real-time chat functionality and seamless streaming of AI responses.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+Real-time Chat Interface: A clean and intuitive chat UI for a smooth conversational flow.
 
-Currently, two official plugins are available:
+Streaming Responses: AI-generated text is streamed in real time, enhancing the user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Responsive Design: Optimized for a flawless experience on desktop, tablet, and mobile devices.
 
-## Expanding the ESLint configuration
+User Authentication: Secure sign-in and sign-out functionality using Firebase.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💻 Technologies Used
+React: The core JavaScript library used to build the user interface.
+
+Vite: A next-generation frontend build tool that provides a fast and efficient development experience.
+
+Tailwind CSS: A utility-first CSS framework for rapid UI development and styling.
+
+Firebase: Utilized for user authentication and real-time data storage (Firestore).
+
+Gemini API: The powerful large language model that powers the conversational AI.
